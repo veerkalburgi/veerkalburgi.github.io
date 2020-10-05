@@ -130,33 +130,7 @@
                 <p style="text-align:center;"><img src="assets/images/imageclassifier.gif" alt="description of gif"  style="width:800px;height:500px;">
             	<div> <p style="text-align:center;"><i>Image Classification using CNN</i> </p></div>
             </div-->            
-            <br>
-            <br>
-            <h4>1.<i> Convolutions</i></h4> 
-            <div>
-                <p style="text-align:center;"><img src="assets/images/no_padding_no_strides.gif" alt="description of gif"  style="width:200px;height:220px;">
-            	<img src="assets/images/no_padding_strides.gif" alt="description of gif"  style="width:200px;height:220px;">
-            	<img src="assets/images/no_padding_no_strides_transposed.gif" alt="description of gif"  style="width:200px;height:220px;">
-            	<img src="assets/images/full_padding_no_strides_transposed.gif" alt="description of gif"  style="width:200px;height:220px;">
-            	<br>
-            	<div> <p style="text-align:center;"><i>Convolutions in CNN</i>, Blue: <i>Input</i> and Green: <i>Output</i></p></div>
-            </div>
-            <p>
-            <p>A convolution is a type of matrix operation, consisting of a kernel, a small matrix of weights, that slides over input data performing element-wise multiplication with the part of the input it is on, then summing the results into an output.
-            </p>These are basically merging two sets of information. Mathematically, convolution refers to combination of two function to yield third function. In the case of CNN, convolution is the application of filters/kernels to an input image resulting in activations. Feature maps are what we get on repeated applications of such filters over the input. These feature map indicate the locations learned and strength of detected feature of input, i.e., they summarize the presence of detected features in input. The simple MLP does not consider the order and importance of neighbouring pixels. CNN on other hand, as described above, takes the advantage using convolutions.</p> 
-            <p>
-            The problem of feature maps is that these are sensitive to locations of features in input. One way to adress the issue is to down sample the feature map. This is addressed by <i>pooling</i>.   
-            </p>
-            <h4>2.<i> Pooling</i></h4>
-            <p>Pooling layers provide an approach to down sampling feature maps by summarizing the presence of features in patches of the feature map. Two common pooling methods are average pooling and max pooling. 
-            <div>
-                <p style="text-align:center;"><img src="assets/images/pooling.png" alt="description of gif"  style="width:400px;height:400px;">
-            	<br>
-            	<div> <p style="text-align:center;"><i>Max Pooling and Average Pooling in CNN </i></p></div>
-            </div>
-            <br><br>
-            The above discussed are the reasons why I chose CNN architecture for the purpose of image classification. Further, I used pretrained models to classify the target dataset, dog images. </p>
-            <br>
+            
           <h3><strong>Transfer Learning</strong></h3>  
             <p>The <b>Transfer learning</b> approach, is utilizing the selected pretrained network and then adapting of neural network to a new (similar) dataset. The approach keeps all the convolutional layers but replacing the final fully connected layers with another neural network. The base network "transfers" the learnt features to targeted network.
             </p>
